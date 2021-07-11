@@ -1,0 +1,28 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 850px) {
+    .buttonBox {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+    }
+    /* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .buttonBox {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    
+    }
+    }
+
+    @media only screen  and (min-width : 1224px) {
+        .chartContainer {
+            display: flex;
+        }
+        .buttonBox {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1rem;
+        }
+        }

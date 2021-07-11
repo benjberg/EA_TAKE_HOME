@@ -1,0 +1,1 @@
+export const REST_API_ROOT_ENDPOINT = 'https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&id=240444&api_key=NOApXUrw65WcA1lZeILrLjRz2sKtYeTibBJQTSlh';

@@ -1,0 +1,47 @@
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 850px) {
+    .header {
+        display: flex;
+        height: 20vh;
+        background-color: green;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo-name {
+        
+        font-family: 'Encode Sans SC', sans-serif;
+    }
+    }
+    /* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles */
+    }
+    
+    .header {
+        display: flex;
+        height: 20vh;
+        background-color: green;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo-name {
+        
+        font-family: 'Encode Sans SC', sans-serif;
+    }
+    /* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    .header {
+        display: flex;
+        height: 20vh;
+        background-color: green;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo-name {
+        
+        font-family: 'Encode Sans SC', sans-serif;
+    }
+    }
