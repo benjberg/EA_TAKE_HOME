@@ -16,7 +16,7 @@ export const GetData = () =>{
 })
 
 const [loading, setLoading] = useState(true)
-const [programdata,setProgramData] = useState([])
+const [programData,setProgramData] = useState([])
 const [ethnicData,setEthnicData] = useState([])
 const [pieData, setPieData] = useState([])
 
@@ -30,13 +30,10 @@ useEffect(  () => {
            
             // filter out all enteries in data that have null value
             let nulledData = removeNull(latestData.student.demographics.race_ethnicity)
-        
             setEthnicData(GetChartData(nulledData))
        
-
             // set data for pie chart
             setPieData(GetChartData(latestData.admissions.sat_scores.midpoint))
-
 
             setSchool_info({ name:schoolData.name,
             webSite: schoolData.school_url,
@@ -47,5 +44,5 @@ useEffect(  () => {
     }).catch(err => console.log(err))
     setLoading(false)
 }, []);
-    return { loading,school_info, programdata,ethnicData,pieData}
+    return {loading,school_info, programData,ethnicData,pieData}
 }

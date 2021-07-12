@@ -7,11 +7,8 @@ import {GetData} from '../hooks';
 import '../styles/content.css'
 
 const Content = () => {
- const school_info = GetData().school_info
- const programGraph = GetData().programdata
- const ethnicGraph = GetData().ethnicData
- const pieChart = GetData().pieData
- const loading  = GetData().loading
+ const {loading,school_info, programData,ethnicData,pieData} = GetData()
+ console.log('school')
     
 const printScreen = () =>{
         window.print()
@@ -21,7 +18,7 @@ const printScreen = () =>{
         <div className="contentBody">
             <StaticData name={school_info.name} web={school_info.webSite} city={school_info.city} state={school_info.state} zip={school_info.zip} pop={school_info.studentPop}/>
             <div className="chartContainer">
-              { !loading ?  <><Chart data={programGraph} ariaDesc={'programs offered by precent'} title={'Program'} subtitle={'percent'}/> <Chart data={ethnicGraph} ariaDesc={'Ethnicity by precent'} title={'Ethnic'} subtitle={'breakdown'}/> <PieChart data={pieChart} /> </>: <p>loading charts...</p>}
+              { !loading ?  <><Chart data={programData} ariaDesc={'programs offered by precent'} title={'Program'} subtitle={'percent'}/> <Chart data={ethnicData} ariaDesc={'Ethnicity by precent'} title={'Ethnic'} subtitle={'breakdown'}/> <PieChart data={pieData} /> </>: <p>loading charts...</p>}
              </div>
                 <div className="buttonBox">
              <a href="EA.pdf"  download>
