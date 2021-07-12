@@ -8,7 +8,7 @@ import '../styles/content.css'
 
 const Content = () => {
  const {loading,school_info, programData,ethnicData,pieData} = GetData()
- console.log('school')
+ 
     
 const printScreen = () =>{
         window.print()
